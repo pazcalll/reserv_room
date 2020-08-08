@@ -7,39 +7,11 @@
     <div class="container d-flex justify-content-begin">
       <div class="col-12">
         <div class="row d-flex justify-content-begin" >
-          <div class="col-4">
-            <a href="#" class="content-item-available">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-available">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-available">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-available">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-available">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-available">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-available">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-available">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-available">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-available">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-available">Room Name</a>
-          </div>
+          @foreach ($active as $row)
+            <div class="col-4">
+              <a href="#" class="content-item-available">{{$row->room_id}}</a>
+            </div>
+          @endforeach
         </div>
       </div>
     </div>
@@ -47,39 +19,11 @@
     <div class="container">
       <div class="col-12">
         <div class="row d-flex justify-content-begin">
-          <div class="col-4">
-            <a href="#" class="content-item-unavailable">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-unavailable">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-unavailable">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-unavailable">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-unavailable">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-unavailable">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-unavailable">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-unavailable">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-unavailable">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-unavailable">Room Name</a>
-          </div>
-          <div class="col-4">
-            <a href="#" class="content-item-unavailable">Room Name</a>
-          </div>
+          @foreach ($inactive as $row)
+            <div class="col-4">
+              <span class="content-item-unavailable">{{$row->room_id}}</span>
+            </div>
+          @endforeach
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class UserController extends Controller
 {
@@ -14,8 +15,9 @@ class UserController extends Controller
 
     public function index()
     {
-
-        return view('user/rooms');
+        $active = DB::table('rooms')->where('room_status','available')->get();
+        $inactive = DB::table('rooms')->where('room_status','unavailable')->get();
+        return view('user/rooms')->with('active',$active)->with('inactive',$inactive);
     }
     public function myroom()
     {

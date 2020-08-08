@@ -29,10 +29,10 @@
                 <td>:&emsp;</td>
                 <td>{{Auth::user()->email}}</td>
               </tr>
-              <tr>
-                <td>Change Password&emsp;</td>
-                <td>:&emsp;</td>
-                <td><a href="#">Change Password</a></td>
+              <tr style="height: 90px">
+                <td></td>
+                <td></td>
+                <td><a href="#" class="btn btn-warning" style="outline: none;">Change Password</a></td>
               </tr>
             </table>
           </div>
