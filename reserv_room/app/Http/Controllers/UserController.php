@@ -21,4 +21,8 @@ class UserController extends Controller
     {
         return view('user/myroom');
     }
+    public function usermanagement()
+    {
+        return view('user/usermanagement');
+    }
 }

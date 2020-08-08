@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/index', 'UserController@index')->name('index');
 Route::get('myroom', 'UserController@myroom')->name('myroom');
+Route::get('usermanagement', 'UserController@usermanagement')->name('usermanagement');
