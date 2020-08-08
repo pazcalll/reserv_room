@@ -17,4 +17,8 @@ class UserController extends Controller
 
         return view('user/rooms');
     }
+    public function myroom()
+    {
+        return view('user/myroom');
+    }
 }
