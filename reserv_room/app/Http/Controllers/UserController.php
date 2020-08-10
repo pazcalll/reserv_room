@@ -27,4 +27,8 @@ class UserController extends Controller
     {
         return view('user/usermanagement');
     }
+    public function timer($room_id)
+    {
+        return view('user/timer')->with('room_id', $room_id);
+    }
 }
