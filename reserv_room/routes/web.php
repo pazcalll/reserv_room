@@ -24,3 +24,4 @@ Route::get('/index', 'UserController@index')->name('index');
 Route::get('myroom', 'UserController@myroom')->name('myroom');
 Route::get('/usermanagement', 'UserController@usermanagement')->name('usermanagement');
 Route::get('/timer/{room_id}','UserController@timer')->name('timer');
+Route::get('/timer/{room_id}/scan','UserController@scan')->name('scan');

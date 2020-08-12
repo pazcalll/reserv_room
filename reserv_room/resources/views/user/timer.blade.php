@@ -1,7 +1,7 @@
 @extends('user/index')
 @section('content')
 <body style="margin-bottom: 300px;">
-  <form action="" method="post">
+  <form action="{{$room_id}}/{{'scan'}}" method="get">
     <div class="d-flex justify-content-begin">
       <div class="content" >
         <h2 class="content-title" for="start"><b>Start Time</b></h2>

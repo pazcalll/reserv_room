@@ -31,4 +31,13 @@ class UserController extends Controller
     {
         return view('user/timer')->with('room_id', $room_id);
     }
+    public function scan(Request $request, $room_id)
+    {
+        $end = $request->end;
+        $start = $request->start;
+        return view('user/scanner')
+            ->with('room_id', $room_id)
+            ->with('end', $end)
+            ->with('start', $start);
+    }
 }
