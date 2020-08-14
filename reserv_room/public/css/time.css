@@ -5,10 +5,10 @@ input[type="time"]::-webkit-inner-spin-button {
     margin-right: 30px;
 }
 input[type="time"]{
-    width:400px; 
-    font-size: 66px; 
+    width:330px; 
+    font-size: 47px; 
     font-family: sans-serif;
-    height: 180px;
+    height: 100px;
     margin-bottom: 60px;
 }
 @media (max-width:600px){
