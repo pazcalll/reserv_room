@@ -37,7 +37,7 @@
       </form>
     </ul>
   </div>
-    <script type="text/javascript" src="{{URL::asset('webcodecamjs-master/js/filereader.js')}}"></script>
+    <script type="text/javascript" async src="{{URL::asset('webcodecamjs-master/js/filereader.js')}}"></script>
   <!-- Using jquery version: -->
   <!--
       <script type="text/javascript" src="js/jquery.js"></script>
@@ -45,8 +45,8 @@
       <script type="text/javascript" src="js/webcodecamjquery.js"></script>
       <script type="text/javascript" src="js/mainjquery.js"></script>
   -->
-  <script type="text/javascript" src="{{URL::asset('webcodecamjs-master/js/qrcodelib.js')}}"></script>
-  <script type="text/javascript" src="{{URL::asset('webcodecamjs-master/js/webcodecamjs.js')}}"></script>
-  <script type="text/javascript" src="{{URL::asset('webcodecamjs-master/js/main.js')}}"></script>
+  <script type="text/javascript" async src="{{URL::asset('webcodecamjs-master/js/qrcodelib.js')}}"></script>
+  <script type="text/javascript" async src="{{URL::asset('webcodecamjs-master/js/webcodecamjs.js')}}"></script>
+  <script type="text/javascript" async src="{{URL::asset('webcodecamjs-master/js/main.js')}}"></script>
 </body>
 </html>
